@@ -48,6 +48,9 @@
    <property name="text">
     <string>Enter</string>
    </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLineEdit" name="id">
    <property name="geometry">
@@ -57,6 +60,12 @@
      <width>150</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLineEdit" name="password">
@@ -70,6 +79,9 @@
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
